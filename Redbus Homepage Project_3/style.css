@@ -1,0 +1,650 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+/* Navbar Section */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: 100px;
+    width: 100%;
+    font-size: small;
+    background-color: white;
+    box-shadow: 0px 0px 10px #d7cfcf;
+    z-index: 12;
+    position: fixed;
+}
+
+.redbus-logo {
+    display: flex;
+    align-items: right;
+    padding-left: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Navbar- Bus & Rail Tickets Section */
+
+.ticket {
+    display: flex;
+    justify-content: left;
+    padding-left: 7%;
+    align-items: center;
+    width: 50%;
+    gap: 30px;
+}
+
+.bustkt {
+    text-align: center;
+    font-size: medium;
+    padding: 5px 20px;
+    border-right: 2px solid #d84e55;
+    border-bottom: 2px solid #d84e55;
+    border-radius: 5px;
+}
+
+.bustkt:hover {
+    background-color: #e9e9e9;
+    border: none;
+    cursor: pointer;    
+
+}
+
+.traintkt{
+    text-align: center;
+    font-size: medium;
+    padding: 5px 20px;
+    border-left: 2px solid #d84e55;
+    border-bottom: 2px solid #d84e55;
+    border-radius: 5px;
+}
+
+.traintkt:hover {
+    background-color: #e9e9e9;
+    border: none;
+    cursor: pointer;
+
+}
+
+.bus-book , .train-book {
+    height: 30px;
+    width: 30px;
+}
+
+/* Navbar- Help & Support Section */
+
+.bannerhome {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.homebanner {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.help-account {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    height: 40%;
+    width: 18%;
+    align-items: center;
+}
+
+.help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.support {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+
+.headphone {
+    height: 30px;
+    width: 30px;
+}
+
+.account {
+    height: 30px;
+    width: 30px;
+}
+
+/* Main Content Section */
+
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+}
+
+.search-bar {
+    position: absolute;
+    top: 31%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 65%;
+    height: 15%;
+}
+
+.from {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.to {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 2.1%;
+    border: none;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 100%;
+    width: 35%;
+    font-size: 40px;
+    color: #fff;
+    padding: 15px;
+    font-weight: 700;
+    background-color: #d84e55;
+    cursor: pointer;
+}
+
+.btn-to , .btn-from , .btn-date {
+    border: none;
+}
+
+/* Offer Cards Section */
+
+.offer-cards {
+    width: 1200px;
+    height: fit-content;
+    padding: 2rem;
+    border: none;
+    border-radius: 31px;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px rgb(65, 65, 65, 0.7);
+    position: absolute;
+    bottom: -110px;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 2.2em;
+    cursor: pointer;
+
+}
+
+.Offer-container {
+    display: flex;
+    overflow: scroll hidden;
+    width: 100%;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.card-one , .card-two , .card-three , .card-four , .card-five , .card-six {
+    display: flex;
+    width: 19rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%)
+}
+.card-one {
+    display: flex;
+    width: 19rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%)
+}
+
+.card-two {
+    display: flex;
+    width: 19rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210, 149) 109.43%)
+}
+
+.card-three {
+    display: flex;
+    width: 19rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%)
+}
+
+.card-four {
+    display: flex;
+    width: 19rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%)
+}
+
+.card-five {
+    display: flex;
+    width: 19rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: linear-gradient(71.04deg, rgb(24, 125, 151) -6.92%, rgb(109, 213, 237) 109.43%)
+}
+
+.card-six {
+    display: flex;
+    width: 19rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: linear-gradient(71.04deg, rgb(206, 119, 0) -6.92%, rgb(255, 194, 111) 109.43%)
+}
+
+
+
+.card-logo1 , .card-logo2 , .card-logo5 , .card-logo6 {
+    border: none;
+    border-radius: 50%;
+}
+
+.offer-cards > h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.offer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.7rem;
+    width: 15rem;
+    color: #fff;
+}
+
+.coupon-code {
+    display: flex;
+    justify-content: left;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.coupon-1 , .coupon-2 , .coupon-3 , .coupon-4 , .coupon-5 , .coupon-6 {
+    border: 1px white dashed;
+    border-radius: 5px;
+    padding: 0.3rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.bus {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    border: none;
+    border-radius: 25px;
+    padding: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Train Ticket Section */
+
+.train-left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2rem;
+}
+
+.train-book1 {
+    position: relative;
+    bottom: -300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0px 100px 0px 150px;
+    align-items: top;
+}
+
+.train-heading {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.s3-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    gap: 10px;
+    padding: 10px 20px;
+    border-bottom: 2px solid #d84e55;
+    font-weight: 700;
+    font-size: large;
+    color: #d84e55;
+}
+
+.ticket-points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: left;
+}
+
+.train-para {
+    line-height: 34px;
+    font-size: 1em;
+}
+
+.point-1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    font-weight: 700;
+
+}
+
+.point-2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    font-weight: 700;
+}
+
+.point-3 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    font-weight: 700;
+}
+
+.back-p1 {
+    position: absolute;
+}
+
+.back-p2 {
+    position: relative;
+}
+
+.tbook-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    background-color: #d84e55;
+    padding: 13px 12px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: #fff;
+    width: 220px;
+}
+
+.tbook-btn:hover {
+    background-color: #ca000a;
+}
+
+.tbook-btn > a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Global Presence */
+
+.globalpresence {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    position: relative;
+    width: 100vh;
+    bottom: -60vh;
+    gap: 40px;
+    padding: 10px 160px;
+}
+
+.globalpresence > div > h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.colombia , .india , .indonesia , .peru , .malaysia , .singapore , .cambodia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+
+}
+
+.colombia > img , .india > img , .indonesia > img , .peru > img , .malaysia > img , .singapore > img , .cambodia > img {
+    height: 100px;
+    width: 100px;
+}
+
+
+/* Blog */
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    position: relative;
+    bottom: -70vh;
+    gap: 80px;
+    padding: 10px 160px;
+}
+.blog-1, .blog-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 20px;
+}
+
+.blog-1 > h1 , .blog-2 > h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.blog-1 > p  {
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.blog-2 > p {
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.blog-offer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+    padding: 3rem 2.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    width: 1200px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.offer-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.p1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #555555;
+}
+
+.p2 {
+    font-weight: 600;
+    color: #555555;
+}
+
+.offer-btn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d84e55;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.offer-btn:hover {
+    background-color: #b5040d;
+}
+
+.last-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    bottom: -70vh;
+    margin-top: 20PX;
+    padding: 30px 160px;
+    background-color: #f4f4f4;
+}
+
+.discribe-rb {
+    margin-bottom: 20px;
+    width: 30%;
+    font-weight: 300;
+}
+
+.last-sec > div > ul {
+    font-size: 14px;
+    list-style-type: none;
+    margin-top: 10px;
+
+}
+
+.last-sec > div > ul > li {
+    margin-bottom: 10px;
+}
+
+.last-sec > div > h1 {
+    font-size: 18px;
+}
+
+/* Footer section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    bottom: -70vh;
+    gap: 80px;
+    padding: 10px 160px;
+    padding: 30px 160px;
+    background-color: #f4f4f4;
+    font-size: 15px;
+}
