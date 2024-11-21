@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions & Loops</title>
+
+    <style>
+
+        .mainSection {
+            display: flex;
+        }
+      
+        .container {
+            max-width: 800px;
+            height: 300px;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+      
+    </style>
+</head>
+<body>
+    
+    <Header style="text-align: center; font-size: 20PX; height: 100%;" ><h1>PW Skills Project: Conditions & Loops</h1></Header>
+    <hr>
+    
+    <section class="mainSection">
+        <section style=" width: 400px; padding: 0px 60px; margin: 40px 0px;">
+            <h1>Q.1: What are conditional statements? Explain conditional statements with syntax and examples.</h1>
+            <div>
+                <h2>Ans: Conditional Statements:</h2>
+                <p>Conditional statements allow a program to make decisions and execute certain actions based on whether a condition (or set of conditions) is true or false. They are a fundamental concept in programming, enabling dynamic behavior depending on input, program state, or other factors.
+    
+                In JavaScript, conditional statements use Boolean expressions (expressions that evaluate to true or false) to control the flow of the program.
+                </p>   
+                <ul style="font-size: 20px; line-height: 35px;">
+                    <strong>Types of Conditional Statements</strong>
+                    <li>if statement</li>
+                    <li>if-else statement</li>
+                    <li>else-if ladder</li>
+                    <li>switch statement (in some languages)</li>
+                </ul>
+    
+                <div>
+                    <h2>1. if Statement</h2>
+                    <p>The basic conditional statement is the if statement, which executes a block of code only if a specified condition is true.</p>
+                    <h3>Syntax:</h3>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        if (condition) { <br>
+                           execute the code if <br> 
+                        }
+                    </p>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        let age = 20;<br>
+    
+                        if (age >= 18) { <br>
+                            console.log("You are an adult.");<br>
+                        }
+                    </p>
+                </div>
+                <div>
+                    <h2>2. if-else Statement</h2>
+                    <p>An if-else statement provides two paths: one if the condition is true and another if it is false.</p>
+                    <h3>Syntax:</h3>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        if (condition) { <br>
+                            // code to execute if the condition is true <br>
+                        } else { <br>
+                            // code to execute if the condition is false <br>
+                        } <br>
+                    </p>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        let age = 16; <br>
+    
+                        if (age >= 18) { <br>
+                            console.log("You are an adult."); <br>
+                        } else { <br>
+                            console.log("You are a minor.");<br>
+                        }
+                        
+                    </p>
+                </div>
+                <div>
+                    <h2>3. else-if Ladder (Multiple Conditions)</h2>
+                    <p>When you need to check multiple conditions, you can use the else if ladder to test different cases.</p>
+                    <h3>Syntax:</h3>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        if (condition1) { <br>
+                            // code to execute if condition1 is true <br>
+                        } else if (condition2) { <br>
+                            // code to execute if condition2 is true <br>
+                        } else if (condition3) { <br>
+                            // code to execute if condition3 is true <br>
+                        } else { <br>
+                            // code to execute if no condition is true <br>
+                        }
+                    </p>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        let age = 25; <br>
+    
+                        if (age &lt; 13) { <br>
+                            console.log("Child"); <br>
+                        } else if (age &lt; 18) { <br>
+                            console.log("Teenager"); <br>
+                        } else if (age &lt; 60) { <br>
+                            console.log("Adult"); <br>
+                        } else { <br>
+                            console.log("Senior"); <br>
+                        }
+                        
+                    </p>
+                </div>
+    
+                <div>
+                    <h2>4. switch Statement</h2>
+                    <p>The switch statement is another way to check multiple conditions but is often more readable when checking a single expression against many possible values.</p>
+                    <h3>Syntax:</h3>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        switch (expression) { <br>
+                            case value1: <br>
+                                // code to execute if expression == value1 <br>
+                                break; <br>
+                            case value2: <br>
+                                // code to execute if expression == value2 <br>
+                                break; <br>
+                            default: <br>
+                                // code to execute if no case matches <br>
+                        }
+                    </p>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        let day = 3; <br>
+    
+                        switch (day) { <br>
+                            case 1: <br>
+                                console.log("Monday"); <br>
+                                break; <br>
+                            case 2: <br>
+                                console.log("Tuesday"); <br>
+                                break; <br>
+                            case 3: <br>
+                                console.log("Wednesday"); <br>
+                                break; <br>
+                            case 4: <br>
+                                console.log("Thursday"); <br>
+                                break; <br>
+                            case 5: <br>
+                                console.log("Friday"); <br>
+                                break; <br>
+                            case 6: <br>
+                                console.log("Saturday"); <br>
+                                break; <br>
+                            case 7: <br>
+                                console.log("Sunday"); <br>
+                                break; <br>
+                            default: <br>
+                                console.log("Invalid day"); <br>
+                        }
+                        
+                    </p>
+                </div>
+    
+            </div>
+        </section>
+        <hr>
+    
+        <div>
+            <section style="width: 400px; padding: 0px 60px; margin: 40px 0px">
+                <h1>Q2. Write a program that grades students based on their marks.</h1>
+        
+                <div class="container">
+                    <h2>Marks to Grade Converter</h2>
+                    <label for="marks">Enter your marks (0-100):</label>
+                    <input type="number" id="marks" min="0" max="100">
+                    <button onclick="calculateGrade()">Get Grade</button>
+                
+                    <div class="result" id="result"></div>
+                </div>
+                
+                <script>
+                    function calculateGrade() {
+                        // Get the value entered by the user
+                        var marks = document.getElementById('marks').value;
+                        var result = '';
+                
+                        // Check if the input is a valid number
+                        if (marks === '' || isNaN(marks) || marks < 0 || marks > 100) {
+                            result = 'Please enter a valid number between 0 and 100.';
+                        } else {
+                            // Convert the input to a number
+                            marks = Number(marks);
+                
+                            // Determine the grade based on marks
+                            if (marks > 90) {
+                                result = 'Your grade is: A';
+                            } else if (marks >= 80) {
+                                result = 'Your grade is: A';
+                            } else if (marks >= 70) {
+                                result = 'Your grade is: B+';
+                            } else if (marks >= 60) {
+                                result = 'Your grade is: B';
+                            } else if (marks >= 50) {
+                                result = 'Your grade is: C+';
+                            } else if (marks >= 40) {
+                                result = 'Your grade is: C';
+                            } else {
+                                result = 'Your grade is: F (Fail)';
+                            }
+                        }
+                
+                        // Display the result on the webpage
+                        document.getElementById('result').innerText = result;
+                    }
+                </script>
+        
+        
+                </script>
+        
+            </section>
+            <hr>
+    
+            <section style=" width: 400px; padding: 0px 60px; margin: 40px 0px;" class="numberChoice">
+                <h1>Q.4: Generate numbers between any 2 given numbers.</h1>
+        
+                <h1>Generate Numbers Between Two Numbers</h1>
+        
+            <!-- Input fields for num1 and num2 -->
+            <label for="num1">Enter the first number:</label>
+            <input type="number" id="num1" value="10"><br><br>
+        
+            <label for="num2">Enter the second number:</label>
+            <input type="number" id="num2" value="25"><br><br>
+        
+            <button onclick="generateNumbers()">Generate Numbers</button>
+        
+            <div id="results"></div>
+        
+            <script>
+                function generateNumbers() {
+                    // Get the values from the input fields
+                    const num1 = parseInt(document.getElementById('num1').value);
+                    const num2 = parseInt(document.getElementById('num2').value);
+        
+                    // Ensure num1 is less than num2
+                    if (num1 >= num2) {
+                        document.getElementById('results').innerHTML = "The first number must be smaller than the second.";
+                        return;
+                    }
+        
+                    // Generate numbers between num1 and num2
+                    let result = [];
+                    for (let i = num1 + 1; i < num2; i++) {
+                        result.push(i);
+                    }
+        
+                    // Display the result on the webpage
+                    if (result.length > 0) {
+                        document.getElementById('results').innerHTML = "Numbers between " + num1 + " and " + num2 + ": " + result.join(', ');
+                    } else {
+                        document.getElementById('results').innerHTML = "No numbers to display between " + num1 + " and " + num2 + ".";
+                    }
+                }
+            </script>
+        
+            </section>
+            <hr>
+
+            <section style=" width: 400px; padding: 0px 60px; margin: 40px 0px;" class="numberChoice">
+                <h1>Q.5:  Use the while loop to print numbers from 1 to 25 in ascending and descending order.</h1>
+                <h1>Ascending Order (1 to 25)</h1>
+                <div id="ascendingNumbers"></div>
+              
+                <h1>Descending Order (25 to 1)</h1>
+                <div id="descendingNumbers"></div>
+              
+                <script>    
+                  // Ascending order (1 to 25)
+                  let i = 1;
+                  let ascendingResult = "";
+                  while (i <= 25) {
+                    ascendingResult += i + "<br>"; // Add each number followed by a line break
+                    i++;
+                  }
+                  document.getElementById("ascendingNumbers").innerHTML = ascendingResult;
+              
+                  // Descending order (25 to 1)
+                  let j = 25;
+                  let descendingResult = "";
+                  while (j >= 1) {
+                    descendingResult += j + "<br>"; // Add each number followed by a line break
+                    j--;
+                  }
+                  document.getElementById("descendingNumbers").innerHTML = descendingResult;
+                </script>
+               
+        
+            </section>
+            <hr>
+        </div>
+
+        <hr>
+    
+        <section style=" width: 400px; padding: 0px 60px; margin: 40px 0px;">
+            <h1>Q.3: What are loops, and what do we need them? Explain different types of loops with their syntax and
+                examples.</h1>
+            <div>
+               
+                <p>Loops are fundamental programming constructs that allow a block of code to be executed repeatedly based on a condition. Loops are used when we want to perform the same operation multiple times without having to write the same code over and over again.
+    
+                    In JavaScript, loops help automate repetitive tasks, such as processing items in a list, or iterating over a set of data.
+                </p>   
+                <h2>Types of Loops in JavaScript</h2>
+                <p>
+                    There are several types of loops in JavaScript. Each type of loop has a different syntax and use case, depending on the condition and number of iterations required.
+                </p>
+    
+                <div>
+                    <h2>1. for Loop</h2>
+                    <p>The for loop is the most commonly used loop. It allows you to execute a block of code a specific number of times.</p>
+                    <h3>Syntax:</h3>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        for (initialization; condition; increment) { <br>
+                            // code to be executed <br>
+                        } <br>
+                    </p>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        for (let i = 0; i &lt; 5; i++) { <br>
+                            console.log(i);  // Output: 0, 1, 2, 3, 4 <br>
+                        } <br>
+                    </p>
+                </div>
+                <div>
+                    <h2>2. while Loop</h2>
+                    <p>The while loop repeatedly executes a block of code as long as a specified condition is true.</p>
+                    <h3>Syntax:</h3>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        while (condition) { <br>
+                            // code to be executed <br>
+                        } <br>
+                    </p>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        let i = 0;
+                        while (i &lt; 5) { <br>
+                            console.log(i);  // Output: 0, 1, 2, 3, 4 <br>
+                            i++; <br>
+                        } <br>
+                        
+                    </p>
+                </div>
+                <div>
+                    <h2>3. do...while Loop</h2>
+                    <p>The do...while loop is similar to the while loop, but it guarantees that the code block will run at least once, even if the condition is false on the first check.</p>
+                    <h3>Syntax:</h3>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        do { <br>
+                            // code to be executed <br>
+                        } while (condition); <br>
+                    </p>
+                    <p style="padding-left: 40px; color: white; line-height: 30px ; background-color: rgba(0, 0, 0, 0.6);">
+                        let i = 0; <br>
+                        do { <br>
+                            console.log(i);  // Output: 0, 1, 2, 3, 4 <br>
+                            i++; <br>
+                        } while (i &lt; 5); <br>
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr>
+
+    
+
+</body>
+</html>
