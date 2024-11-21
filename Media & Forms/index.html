@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi & Forms Project</title>
+</head>
+<body>
+    <Section class="imageGallery">
+        <!-- First Question of the Project: Media & Forms "Image Gallery" -->
+        <div class="heading" style="text-align: center; font-size: 30px;"><h1>1. Media and Forms: Image Gallery Project</h1></div>
+
+        <div class="imageGallery" style="display: flex; justify-content: space-evenly;">
+    
+                <!-- Left Side Image Grid with Sparrow Images -->
+            <picture class="leftSection">
+                <div class="leftUpper">
+                    <img src="Images/sparrow-5875379_1280.jpg" alt="Sparrow" width="703px">
+                </div>
+                <div class="leftLower">
+                    <img src="Images/sparrow-8937767_1280.jpg" alt="Sparrow" width="350px">
+                    <img src="Images/bird-7624853_1280.jpg" alt="Sparrow" width="350px" height="267px">
+                </div>
+            </picture>
+    
+            <!-- Right Side Image Grid with Horse Images -->
+            <picture class="rightSection">
+                <div class="rightUpper">
+                    <img src="Images/horses-9057949_1280.jpg" alt="Sparrow" width="703px" height="466.7">
+                </div>
+                <div class="rightLower">
+                    <img src="Images/horse-1201143_1280.jpg" alt="Sparrow" width="350px">
+                    <img src="Images/horse-1006376_1280.jpg" alt="Sparrow" width="350px" >
+                </div>
+            </picture>
+        </div>
+    </Section>
+    <hr>
+    <section class="video-audio-play" style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
+        <!-- Using video and audio tags to display video and audio with the playback, audio control -->
+        <div class="heading" style="text-align: center; font-size: 30px;"><h1>2. Media and Forms: Video & Audio Playback Project</h1></div>
+         <video src="Videos/203196-920181430_small.mp4" width="1440px" controls >This The Video of Birds at the time of "Sunset"</video>
+         <audio src="Audio/night-detective-226857.mp3" controls style="width: 1440px; height: 100px;"></audio>
+    </section>
+
+    <section class="video-audio-play" style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
+        <!-- Modify the previous assignment so that the audio and video play automatically as the page is loaded and they should play infinite -->
+        <div class="heading" style="text-align: center; font-size: 30px;"><h1>3. Media and Forms: Video & Audio Playback with Autoplay Project</h1></div>
+         <video src="Videos/203196-920181430_small.mp4" width="1440px" controls autoplay>This The Video of Birds at the time of "Sunset"</video>
+         <audio src="Audio/night-detective-226857.mp3" controls autoplay style="width: 1440px; height: 100px;" ></audio>
+    </section>
+    <hr>
+    
+    <section class="iframeEmbed" style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
+        <!--  Use iframe to embed the PhysicsWallah Wikipedia page properly -->
+        <div class="heading" style="text-align: center; font-size: 30px;"><h1>4. Media and Forms: PhysicsWallah Wikipedia Page Project</h1></div>
+        <iframe src="https://en.wikipedia.org/wiki/Physics_Wallah" frameborder="1" width="1440px" height="600px"></iframe>
+    </section>
+    <hr>
+
+    <section class="forms" style="display: grid; grid-template-rows: 1fr, 1fr; margin-top: 50px; text-align: center;">
+        <!--  Use iframe to embed the PhysicsWallah Wikipedia page properly -->
+        <div class="heading" style="text-align: center; font-size: 30px;"><h1>4. Media and Forms: Sign Up & Sign in Forms Project</h1></div>
+
+        <!-- Sign Up Form -->
+           <form action="Submit" style="text-align: left; margin: auto; border: 1px solid black; padding: 100px;" id="signUp">
+
+            <label for="firstName">First Name:
+                <input type="text" id="firstName" name="firstName" placeholder="Write Your First Name!" minlength="3">
+            </label>
+            
+            <br>
+
+            <label for="lastName">Last Name:
+                <input type="text" id="lastName" name="lastName" placeholder="Write Your Last Name!" minlength="3">
+
+            </label>
+            
+            <br>
+
+            <label for="email">Email Address:
+                <input type="text" id="email" name="email" placeholder="Write Your Email Address!" required>
+            </label>
+
+            <br>
+            
+            <label for="password">New Password:
+                <input type="password" id="password" name="password" placeholder="Choose Your New Passwrd!" required>
+            </label>
+
+            <br>
+            
+            <label for="confirmPassword">Confirm Password:
+                <input type="text" id="confirmPassword" name="confirmPassword" placeholder="Please Confirm Your Password!" required>
+            </label>
+
+            <br>
+
+            <label for="Age">Age:
+                <input type="number" id="Age" name="Age" placeholder="Fill Your Age!" min="0" max="150" required>
+            </label>
+
+            <br>
+
+            <legend>Choose Your Gender:
+                <label for="male">Male
+                    <input type="checkbox" id="male" name="male" >  
+                </label>        
+                <label for="female">Female
+                    <input type="checkbox" id="female" name="female">
+                </label>
+            </legend>
+
+            <br>
+            
+            <label for="termsCondn">
+                <input type="checkbox" name="termsCondn" id="termsCondn" required>
+                I Agree with terms & Conditions</label>
+
+            <br>
+
+            <button>Sign Up</button>
+           </form>
+
+           <hr> 
+
+           <!-- Sign In Form  -->
+
+           <form action="submit" style="text-align: left; margin: auto; border: 1px solid black; padding: 100px;" id="signIn">
+           
+            <label for="email">Email Address:
+                <input type="text" id="email" name="email" placeholder="Write Your Email Address!" required>
+            </label>
+
+            <br>
+            
+            <label for="password">New Password:
+                <input type="password" id="password" name="password" placeholder="Choose Your New Passwrd!" required>
+            </label>
+
+            <br>
+
+            <button>Sign In</button>
+           </form>
+    </section>
+
+    
+    
+</body>
+</html>
